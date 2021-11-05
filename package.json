@@ -7,13 +7,21 @@
     "dev": "vite --open",
     "build": "vite build",
     "serve": "vite preview",
-    "prepare": "npx simple-git-hooks"
+    "prepare": "npx simple-git-hooks",
+    "test": "jest --env jsdom",
+    "coverage": "jest --env jsdom --coverage --collectCoverageFrom \"src/**/*.js\""
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
     "eclint": "^2.8.1",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.1",
     "lint-staged": "^11.1.2",
     "sass": "^1.41.1",
     "simple-git-hooks": "^2.6.1",

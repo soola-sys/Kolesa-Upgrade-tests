@@ -30,8 +30,11 @@ describe('Группа тестов.', () => {
                 <div id="error">
                 Error
                 </div>
-                <button id="loader">
+                <div id="loader">
                 Loader
+                </div>
+                <button class="button">
+                This is button
                 </button>
             </div>
             `;
@@ -98,7 +101,7 @@ describe('Группа тестов.', () => {
         expect(getComputedStyle(loader).display).toEqual('none');
     });
 
-    test('Создаем тест для app', () => {
+    test('Тест на добавление контента на страницу в блок app', () => {
         const appElement = document.querySelector('#app').style.display;
 
         expect(appElement).toMatchSnapshot();
